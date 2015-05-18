@@ -1,0 +1,11 @@
+systemLog:
+  destination: file
+  path: "/tmp/DroboApps/unifi/log.txt"
+  logAppend: true
+storage:
+  dbPath: "/mnt/DroboFS/Shares/DroboApps/unifi/data/db"
+processManagement:
+  fork: true
+  pidFilePath: "/tmp/DroboApps/unifi/mongod.pid"
+net:
+  port: 8887

@@ -1,0 +1,7 @@
+unifi.https.port=8043
+unifi.http.port=8883
+unifi.shutdown.port=8884
+portal.http.port=8880
+portal.https.port=8843
+unifi.db.port=8887
+is_default=true
