@@ -7,7 +7,7 @@
 
 framework_version="2.1"
 name="unifi"
-version="3.2.10"
+version="4.7.5"
 description="UniFi AP Controller"
 depends="java8"
 webui=":8043/"
@@ -22,6 +22,7 @@ daemon="${DROBOAPPS_DIR}/java8/bin/java"
 
 # backwards compatibility
 if [ -z "${FRAMEWORK_VERSION:-}" ]; then
+  framework_version="2.0"
   . "${prog_dir}/libexec/service.subr"
 fi
 
@@ -57,7 +58,6 @@ STDERR=">&4"
 echo "$(date +"%Y-%m-%d %H-%M-%S"):" "${0}" "${@}"
 set -o errexit  # exit on uncaught error code
 set -o nounset  # exit on unset variable
-set -o pipefail # propagate last error code on pipe
 set -o xtrace   # enable script tracing
 
 main "${@}"
