@@ -7,7 +7,7 @@
 
 framework_version="2.1"
 name="unifi"
-version="4.7.6"
+version="4.9.1"
 description="UniFi AP Controller"
 depends="java8"
 webui=":8043/"
