@@ -1,6 +1,6 @@
 ### UNIFI ###
 _build_unifi() {
-local VERSION="4.7.5"
+local VERSION="5.0.3-f92cb0fc"
 local FOLDER="UniFi"
 local FILE="${FOLDER}.unix.zip"
 local URL="http://www.ubnt.com/downloads/unifi/${VERSION}/${FILE}"
@@ -12,7 +12,7 @@ unzip "download/${VERSION}/${FILE}" -d "${PWD}/target"
 mkdir -p "${DEST}/data"
 cp -vafr "target/${FOLDER}/"* "${DEST}/"
 }
-
+###
 ### MONGODB ###
 _build_mongodb() {
 local VERSION="3.0.2"

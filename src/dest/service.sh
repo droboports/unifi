@@ -4,10 +4,10 @@
 
 # import DroboApps framework functions
 . /etc/service.subr
-
+###
 framework_version="2.1"
 name="unifi"
-version="4.7.5"
+version="5.0.3-f92cb0fc"
 description="UniFi AP Controller"
 depends="java8"
 webui=":8043/"
